@@ -4,6 +4,8 @@ Strapi application
 
 To start the Strapi project:
 
+(You must clone the repository in the assignment brief and run the following in that project)
+
 npm install
 npm run develop
 

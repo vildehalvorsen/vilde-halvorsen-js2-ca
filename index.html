@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/292441d70e.js" crossorigin="anonymous"></script>
+    <link href="/css/index.css" rel="stylesheet" />
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <nav class="menu"></nav>
+    </header>
+
+    <main>
+        <h1>Articles</h1>
+
+        <form id="search">
+            <label for="searchInput" aria-label="Search by title"></label>
+            <input type="text" id="searchInput" placeholder="Filter by title" />
+        </form>
+
+        <div class="message-container"></div>
+
+        <div class="articles-container">
+            <div class="loader">
+                <i class="fa-solid fa-circle-notch"></i>
+            </div>
+        </div>
+    </main>
+
+    <script src="/js/index.js" type="module"></script>
+</body>
+
+</html>

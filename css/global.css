@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Roboto:wght@300;400&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: rgb(255, 219, 189);
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+    color: rgb(50, 50, 77);
+    margin: 100px auto 50px;
+}
+
+li {
+    display: block;
+}
+
+
+/* Menu */
+
+nav {
+    background-color: rgb(206, 207, 253);
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+nav li {
+    padding: 20px 5px;
+}
+
+nav li:hover {
+    background-color: rgb(228, 229, 255);
+}
+
+nav a {
+    color: rgb(50, 50, 77);
+    text-decoration: none;
+}
+
+.active {
+    color: rgb(99, 101, 158);
+    text-decoration: none;
+}
+
+
+/* Loader */
+
+.fa-circle-notch {
+    font-size: 2.2em;
+    color: rgb(99, 101, 158);
+    animation: loader 0.8s linear infinite;
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* Articles */
+
+.articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.article {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 8px 10px 0px rgba(50, 50, 77, 0.2);
+    padding: 20px;
+    width: 340px;
+    margin: 20px;
+}
+
+.article__title {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(228, 229, 255);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.article h3 {
+    margin-right: 10px;
+}
+
+.article .fa-heart {
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+.article h4 {
+    font-style: italic;
+    color: rgb(50, 50, 77);
+}
+
+.article p {
+    margin: 20px 0 10px;
+}
+
+.article a {
+    display: none;
+    float: right;
+    font-size: 0.9em;
+    color: rgb(0, 101, 184);
+}
+
+.article a:hover {
+    color: rgb(50, 50, 77);
+}
+
+
+/* Messages */
+
+.message {
+    text-align: center;
+    border-radius: 5px;
+    width: 240px;
+    margin: -20px auto 10px;
+    padding: 10px;
+}
+
+.success {
+    background-color: rgb(194, 255, 194);
+    border: 2px solid green;
+}
+
+.error {
+    background-color: rgb(255, 167, 167);
+    border: 2px solid rgb(190, 0, 0);
+}
+
+.warning {
+    background-color: rgb(255, 244, 91);
+    border: 2px solid rgb(255, 187, 0);
+}

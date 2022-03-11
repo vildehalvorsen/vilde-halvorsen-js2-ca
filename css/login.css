@@ -1,0 +1,59 @@
+@import url("./global.css");
+
+/* Form */
+
+.login-container {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    background-color: rgb(228, 229, 255);
+    border-radius: 5px;
+    box-shadow: 0px 8px 10px 0px rgba(50, 50, 77, 0.2);
+    padding: 50px 70px;
+    margin: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+}
+
+input {
+    border-radius: 5px;
+    border: none;
+    width: 240px;
+    padding: 15px;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+#loginBtn {
+    font-size: 1em;
+    color: white;
+    background-color: rgb(50, 50, 77);
+    border-radius: 5px;
+    border: none;
+    width: 240px;
+    padding: 15px;
+    margin: 35px auto 0;
+    cursor: pointer;
+}
+
+#loginBtn:hover {
+    background-color: black;
+}
+
+
+/* Error */
+
+#usernameError,
+#passwordError {
+    display: none;
+    font-family: sans-serif;
+    font-size: 0.8em;
+    text-align: left;
+    color: rgb(206, 0, 0);
+    width: 200px;
+    margin: 5px 0 -8px;
+}
