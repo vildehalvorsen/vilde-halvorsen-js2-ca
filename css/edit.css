@@ -1,24 +1,4 @@
 @import url("./global.css");
-h1 {
-    margin: 10px 0;
-}
-
-.profile-container {
-    text-align: center;
-    margin-bottom: 100px;
-}
-
-p {
-    font-size: 1.3em;
-    width: 420px;
-    margin: 0 auto;
-}
-
-h3 {
-    text-align: left;
-    margin: 20px 0;
-}
-
 
 /* Add form */
 
@@ -55,7 +35,7 @@ input:focus {
     max-height: 150px;
 }
 
-#addBtn {
+#updateBtn {
     font-size: 1em;
     color: white;
     background-color: rgb(50, 50, 77);
@@ -67,29 +47,25 @@ input:focus {
     cursor: pointer;
 }
 
-#addBtn:hover {
+#updateBtn:hover {
     background-color: black;
 }
 
 
-/* Log out */
+/* Delete button */
 
-.logOut-container {
-    display: flex;
-    justify-content: center;
-    margin: 40px auto;
-}
-
-#logOutBtn {
+#deleteBtn {
+    font-size: 1em;
     color: white;
     background-color: rgb(194, 0, 0);
     border-radius: 5px;
     border: none;
-    padding: 10px;
-    width: 150px;
+    width: 240px;
+    padding: 15px;
+    margin: 10px auto;
     cursor: pointer;
 }
 
-#logOutBtn:hover {
-    background-color: black;
+#deleteBtn:hover {
+    background-color: rgb(255, 72, 72);
 }

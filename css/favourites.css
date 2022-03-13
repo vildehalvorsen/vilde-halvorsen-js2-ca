@@ -9,7 +9,6 @@
 }
 
 #clearBtn {
-    font-size: 1em;
     color: white;
     background-color: rgb(50, 50, 77);
     border-radius: 5px;
@@ -27,6 +26,10 @@
 
 
 /* Articles */
+
+.articles-container {
+    margin-bottom: 100px;
+}
 
 .article .fa-heart {
     cursor: auto;

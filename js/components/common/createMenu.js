@@ -6,10 +6,10 @@ export default function createMenu() {
 
     const username = getUser();
 
-    let authLink = `<a href="/login.html" class="${pathname === "/login.html" ? "active" : ""}">Log in</a>`;
+    let userLink = `<a href="/login.html" class="${pathname === "/login.html" ? "active" : ""}">Log in</a>`;
 
     if (username) {
-        authLink = `<a href="/profile.html" class="${pathname === "/profile.html" ? "active" : ""}"><i class="fa-solid fa-circle-user"></i> ${username}</a>`;
+        userLink = `<a href="/profile.html" class="${pathname === "/profile.html"  || pathname === "/edit.html" ? "active" : ""}"><i class="fa-solid fa-circle-user"></i> ${username}</a>`;
     }
 
     const menuContainer = document.querySelector(".menu");
@@ -23,7 +23,7 @@ export default function createMenu() {
                                   </li>
 
                                   <li>
-                                  ${authLink}
-                                   </li>
+                                  ${userLink}
+                                  </li>
                               </ul>`
 }

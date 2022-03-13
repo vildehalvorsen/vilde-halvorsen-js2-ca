@@ -1,11 +1,15 @@
 @import url("./global.css");
+.articles-container {
+    margin-bottom: 100px;
+}
+
 
 /* Filter input */
 
 form {
     display: flex;
     justify-content: center;
-    margin: 50px 20px;
+    margin: 20px 20px 40px;
 }
 
 input {
@@ -18,4 +22,28 @@ input {
 
 input:focus {
     border: 1px solid rgb(50, 50, 77);
+}
+
+
+/* Add new button */
+
+.addNew-container {
+    display: flex;
+    justify-content: center;
+}
+
+#addNewBtn {
+    display: none;
+    color: white;
+    background-color: rgb(50, 50, 77);
+    border-radius: 5px;
+    border: none;
+    width: 340px;
+    padding: 10px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+#addNewBtn:hover {
+    background-color: black;
 }

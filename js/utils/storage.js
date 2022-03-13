@@ -16,8 +16,8 @@ export function getFromStorage(key) {
     return JSON.parse(currentList);
 }
 
-export function clearStorage(key) {
-    localStorage.clear(key);
+export function clearStorageItem(key) {
+    localStorage.removeItem(key);
 };
 
 /* Log in functions*/

@@ -11,7 +11,6 @@ export function toggleFavourites() {
 
     const currentFavs = getFromStorage(favKey);
 
-    // Find method, finner 1 object i et array.
     const favExists = currentFavs.find(fav => fav.id === id);
 
     if (!favExists) {
@@ -19,9 +18,7 @@ export function toggleFavourites() {
         currentFavs.push(article);
         saveToStorage(favKey, currentFavs);
     } else {
-        // Filter method, returnerer et array med tildelt filter
         const newFavs = currentFavs.filter(fav => fav.id !== id);
         saveToStorage(favKey, newFavs);
     }
-
 }
